@@ -5,6 +5,9 @@ type Props = {
   children: React.ReactNode;
 };
 
+// news関連のページ全てに設定
+export const revalidate = 60;
+
 export default function NewsLayout({ children }: Props) {
   return (
     <>

@@ -6,7 +6,7 @@ import { TOP_NEWS_LIMIT } from "./_constants";
 import NewsList from "./_components/NewsList";
 import ButtonLink from "./_components/ButtonLink";
 
-import type { News } from "@/app/_libs/microcms";
+export const revalidate = 60;
 
 export default async function Home() {
   const data = await getNewsList({ limit: TOP_NEWS_LIMIT });
