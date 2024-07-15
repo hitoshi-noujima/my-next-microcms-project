@@ -6,6 +6,8 @@ type Props = {
   date: string;
 };
 
+// loading="eager"
+// 画像の取得を優先的にしたいわけではないが、遅延読み込みを回避したい
 export default function Date({ date }: Props) {
   const { textDate, datetime } = formatDate(date);
   return (

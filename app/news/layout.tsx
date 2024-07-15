@@ -5,6 +5,10 @@ type Props = {
   children: React.ReactNode;
 };
 
+export const metadata = {
+  title: "ニュース",
+};
+
 // news関連のページ全てに設定
 export const revalidate = 60;
 
